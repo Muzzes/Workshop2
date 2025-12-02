@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meejan Maharjan - Portfolio</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- Header with Video Background Effect -->
+    <header id="head">
+        <!-- Video Background -->
+        <div class="video-background">
+            <video autoplay loop muted id="bg-video">
+                <source src="video/sample.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="animated-pattern"></div>
+        </div>
+
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <span class="logo">My Portfolio</span>
+
+            <!-- Desktop Navigation -->
+            <ul class="nav-links desktop-nav">
+                <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+                <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+            </ul>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button class="menu-toggle mobile-toggle" id="menu-button" aria-expanded="false" aria-label="Toggle navigation">
+                ☰
+            </button>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="#home" class="mobile-link" data-section="home">Home</a>
+            <a href="#about" class="mobile-link" data-section="about">About</a>
+            <a href="#skills" class="mobile-link" data-section="skills">Skills</a>
+            <a href="#projects" class="mobile-link" data-section="projects">Projects</a>
+            <a href="#contact" class="mobile-link" data-section="contact">Contact</a>
+        </div>
+
+
+        <div class="head-content">
+            <h1>Meejan Maharjan</h1>
+            <p>The Guy</p>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <div class="container">
+        <!-- About Section -->
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="profile-img">
+                    <img src="Images/PFP.jpeg" alt="Profile" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                </div>
+                <div class="about-text">
+                    <p>I'm a web developer from Kathmandu, Nepal, with a strong foundation in web development and a keen eye for design. I strive to create meaningful digital experiences.</p>
+                    <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or enjoying the beautiful landscapes of Nepal.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section - Using Flexbox -->
+        <section id="skills" class="section">
+            <h2>My Skills</h2>
+            <div class="skills-container">
+                <div class="skill-tag">HTML5</div>
+                <div class="skill-tag">CSS3</div>
+                <div class="skill-tag">JavaScript</div>
+                <div class="skill-tag">Git & GitHub</div>
+                <div class="skill-tag">Responsive Design</div>
+            </div>
+        </section>
+
+        <!-- Projects Section - Using CSS Grid -->
+        <section id="projects" class="section">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Weather App</h3>
+                    <div class="project-body">
+                        <div class="project-icon">
+                            <img src="Images/Weater.png" alt="Weather App">
+                        </div>
+                        <p class="project-description">A real-time weather application that provides current conditions and forecasts for any location worldwide with dynamic animations.</p>
+                    </div>
+                    <p class="project-tags">HTML | CSS | JavaScript</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Banking System</h3>
+                    <div class="project-body">
+                        <div class="project-icon">
+                            <img src="Images/Bank system.png" alt="Banking System">
+                        </div>
+                        <p class="project-description">A secure digital banking platform with robust authentication and encryption for managing accounts and processing transactions.</p>
+                    </div>
+                    <p class="project-tags">Java</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Game Design</h3>
+                    <div class="project-body">
+                        <div class="project-icon">
+                            <img src="Images/Game.jpg" alt="Game Design">
+                        </div>
+                        <p class="project-description">An immersive gaming experience featuring engaging gameplay mechanics, stunning visuals, and smooth performance across devices.</p>
+                    </div>
+                    <p class="project-tags">Unity | C#</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <h2>Send Me A Message</h2>
+            <div class="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="your.email@example.com">
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Your message here..."></textarea>
+
+                <div id="form-message" class="form-message"></div>
+
+                <button id="submit-btn" class="submit-button">Send Message</button>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="year"></span> Meejan Maharjan. All rights reserved.</p>
+        <div class="social">
+            <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+            <span>📱 +977 9813939581</span>
+        </div>
+    </footer>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>
